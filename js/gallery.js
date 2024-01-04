@@ -127,5 +127,100 @@ window.requestAnimFrame = (function(){
   mRequest.send();
   }
   
+  $(document).ready(function () {
+    // Add click handler to img.moreIndicator
+    $('img.moreIndicator').click(function () {
+        // Check if the element has class "rot90"
+        if ($(this).hasClass('rot90')) {
+            // If it has, remove "rot90" and add "rot270"
+            $(this).removeClass('rot90').addClass('rot270');
+        } else {
+            // If it doesn't have "rot90", remove "rot270" and add "rot90"
+            $(this).removeClass('rot270').addClass('rot90');
+        }
+
+        // Slide down/up div.details depending on the arrow direction
+        $('div.details').fadeToggle();
+    });
+});
+
+$(document).ready(function () {
+  // Offset #nextPhoto to be flush with the right side of #gallery
+  var galleryWidth = $('#gallery').width();
+  var nextPhotoWidth = $('#nextPhoto').width();
+  var offset = galleryWidth - nextPhotoWidth;
+  
+  // Set the right offset for #nextPhoto
+  $('#nextPhoto').css('right', offset);
+});
+
+$(document).ready(function () {
+  // Counter for the mImages array
+  var mCurrentIndex = 0;
+
+  // Add click handler for #nextPhoto
+  $('#nextPhoto').click(function () {
+      mCurrentIndex++;
+      if (mCurrentIndex >= mImages.length) {
+
+          mCurrentIndex = 0;
+      }
+      displayPhoto(mCurrentIndex);
+  });
+
+  // Add click handler for #prevPhoto
+  $('#prevPhoto').click(function () {
+      mCurrentIndex--;
+      if (mCurrentIndex < 0) {
+          mCurrentIndex = mImages.length - 1;
+      }
+      displayPhoto(mCurrentIndex);
+  });
+
+  // Function to display photo based on index
+  function displayPhoto(index) {
+      $('#photo').attr('src', mImages[index].url);
+      $('.location').html("Location: " + mImages[index].location);
+      $('.description').html("Description: " + mImages[index].description);
+      $('.date').html("Date: " + mImages[index].date);
+  }
+});
+
+$(document).ready(function () {
+  // Counter for the mImages array
+  var mCurrentIndex = 0;
+
+  // Add click handler for #nextPhoto
+  $('#nextPhoto').click(function () {
+      mCurrentIndex++;
+      if (mCurrentIndex >= mImages.length) {
+          // If it's the last photo, loop back to the first photo
+          mCurrentIndex = 0;
+      }
+      displayPhoto(mCurrentIndex);
+  });
+
+  // Add click handler for #prevPhoto
+  $('#prevPhoto').click(function () {
+      mCurrentIndex--;
+      if (mCurrentIndex < 0) {
+          // If it's the first photo, loop back to the last photo
+          mCurrentIndex = mImages.length - 1;
+      }
+      displayPhoto(mCurrentIndex);
+  });
+
+  // Function to display photo based on index
+  function displayPhoto(index) {
+      $('#photo').attr('src', mImages[index].url);
+      $('.location').html("Location: " + mImages[index].location);
+      $('.description').html("Description: " + mImages[index].description);
+      $('.date').html("Date: " + mImages[index].date);
+  }
+});
+
+$(".selector").on("mouseover", function () {
+  //stuff to do on mouseover
+});
 
   /*call to access the information in the JSON file. */
