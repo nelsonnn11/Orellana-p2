@@ -224,3 +224,4 @@ $(".selector").on("mouseover", function () {
 });
 
   /*call to access the information in the JSON file. */
+  
