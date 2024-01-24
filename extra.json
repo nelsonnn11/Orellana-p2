@@ -1,34 +1,52 @@
 {
     "images": [
       {
-        "imgLocation": "City Park",
-        "description": "Sunset in the Park",
-        "date": "2022-05-15",
-        "imgPath": "https://assets.simpleviewinc.com/simpleview/image/upload/crm/denver/Skyline-from-City-Park-Credit-VISIT-DENVER_ff0ebf30-9974-d6f4-c30321bf4a19c06e.jpg/photo1.jpg"
+        "imgPath": "img/places/beach.png",
+            "imgLocation": "Beach",
+            "description": "Nice Sunset",
+            "date": "01/01/2016"
       },
       {
-        "imgLocation": "Mountain View",
-        "description": "Scenic Mountain Landscape",
-        "date": "2022-07-08",
-        "imgPath": "https://i.natgeofe.com/n/cfa19a0d-eff0-4628-8fdd-2ad8d66845dd/mountain-range-appenzell-switzerland.jpg/photo2.jpg"
+        "imgPath": "img/places/fall.png",
+            "imgLocation": "Waterfall",
+            "description": "Nice waterfall",
+            "date": "01/01/2016"
       },
       {
-        "imgLocation": "Beach Sunset",
-        "description": "Golden Hour at the Beach",
-        "date": "2022-09-20",
-        "imgPath": "https://d3h1pvo2weh65e.cloudfront.net/providentresorts.com-4231748460/cms/cache/v2/652e926ecc783.jpg/1200x800/fit;c:287,0,4928,3093/80/886da80fd276c9c21fec5c78cf1f4db1.jpg/photo3.jpg"
+        "imgPath": "img/places/forrest.png",
+            "imgLocation": "Forrest",
+            "description": "Nice Forrest",
+            "date": "01/01/2016"
       },
       {
-        "imgLocation": "City Skyline",
-        "description": "Night View of the City",
-        "date": "2022-11-03",
-        "imgPath": "https://as1.ftcdn.net/v2/jpg/01/91/74/46/1000_F_191744672_HYfG0261FemsGK5WZWX868BokvbHNmqV.jpg/photo4.jpg"
+        "imgPath": "img/places/glacier.png",
+            "imgLocation": "Glacier",
+            "description": "Nice Glacier",
+            "date": "01/01/2016"
       },
       {
-        "imgLocation": "Forest Walk",
-        "description": "Path through the trees",
-        "date": "2022-11-03",
-        "imgPath": "https://sb.ecobnb.net/app/uploads/sites/3/2022/04/copertina-1-1170x490.jpg.webp/photo4.jpg"
+        "imgPath": "img/places/mnt.png",
+            "imgLocation": "Mountain",
+            "description": "Nice Mountain",
+            "date": "01/01/2016"
+      },
+      {
+        "imgPath": "img/places/city.png",
+            "imgLocation": "City",
+            "description": "Nice City",
+            "date": "01/01/2016"
+      },
+      {
+        "imgPath": "img/places/sub.png",
+            "imgLocation": "Suburbs",
+            "description": "Nice Suburbs",
+            "date": "01/01/2016"
+      },
+      {
+        "imgPath": "img/places/cave.png",
+            "imgLocation": "Cave",
+            "description": "Nice Cave",
+            "date": "01/01/2016"
       }
     ]
   }

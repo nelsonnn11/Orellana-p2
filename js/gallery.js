@@ -64,7 +64,7 @@ window.requestAnimFrame = (function(){
   
   // URL for the JSON to load by default
   // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-  var mUrl = 'images.json';
+  var mUrl = 'extra.json';
   
   
   //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
